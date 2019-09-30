@@ -14,13 +14,13 @@ data = np.array([[13 ,79, 23, 71, 60, 27 ,2],[31, 13, 14 ,94,60,61,57],[17,1,NA,
 
 print(data, end='\n')
 for i in range (0,8):
-	p= np.nanargmin(data,axis=1)
+	p= np.nanargmin(data,axis=1) # to find the min value in every row/task
 #	print (p)
-	cache = np.array([0,0,0,0,0,0,0,0])
+	cache = np.array([0,0,0,0,0,0,0,0]) # store all the minimums into a array
 	for j in range (0,8):
 		cache[j] = data[j,p[j]]
 #	print (cache)
-	task = np.argmax(cache)
+	task = np.argmax(cache) # loocate the maxmum 
 #	print (task)
 	machine = p[task]
 #	print (machine)
