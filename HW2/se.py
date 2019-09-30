@@ -1,6 +1,6 @@
 ####Homework 2 of CI class###
 ####Questino 2###
-####max-min###
+####Sufferage###
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import numpy
